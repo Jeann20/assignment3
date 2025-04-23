@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background-color: #FFEDE1;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+hr {
+    border: none;
+    height: 20px;
+    background: url(../img/Stitch.svg);
+    background-position: center;
+    margin: 0;
+}
+
+/***************************************** NAVBAR *****************************************/
+
+nav {
+    list-style: none;
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    gap: 8em;
+    background-color: #5EAAA8;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3),
+nav li:nth-child(4),
+nav li:nth-child(5),
+nav li:nth-child(6) {
+    margin-top: 35px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: .5s all ease;
+}
+
+nav li a:hover {
+    color: #FFD3B5;
+    font-size: 23px;
+}
+
+nav button {
+    margin-top: 25px;
+    width: 183px;
+    height: 54px;
+    border-radius: 38.5px;
+    border: none;
+    font-size: 20px;
+    background-color: #FFD3B5;
+    transition: .3s all ease;
+}
+
+nav button:hover {
+    background-color: #ffd3b577;
+    border: 3px solid #FFD3B5;
+    color: white;
+    cursor: pointer;
+}
+
+/***************************************** HOME *****************************************/
+
+/* Hero */
+
+.hero-home {
+    background-image: url(../img/Hero.jpg);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-home-text {
+    font-size: 50px;
+    padding-top: 10%;
+}
+
+.hero-home-text h1 {
+    margin: 0 0 0 70px;
+    color: #FFF5E1;
+}
+
+.hero-home-text p {
+    font-size: 24px;
+    margin: 10px 500px 0 70px;
+    color: white;
+}
+
+.cta-button {
+    margin: 20px 0 0 70px;
+}
+
+.cta-button button {
+    color: white;
+    width: 213px;
+    height: 59px;
+    border-radius: 10px;
+    font-size: 28px;
+    transition: .5s all ease;
+}
+
+.cta-button button:nth-child(1) {
+    background-color: #FF6B6B;
+    border: 2px solid #FF6B6B;
+}
+
+.cta-button button:nth-child(1):hover {
+    background-color: #ff6b6b5d;
+    border: 2px solid #FF6B6B;
+    cursor: pointer;
+}
+
+.cta-button button:nth-child(2) {
+    background-color: #5eaaa89e;
+    border: 2px solid #5EAAA8;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+/* Mission & Vision */
+
+.mv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 5%;
+}
+  
+.mv-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.mv-text {
+    max-width: 600px;
+}
+
+.mv-text h1 {
+    font-size: 48px;
+    color: #FF6B6B;
+}
+
+.mv-text h2 {
+    font-size: 28px;
+    color: #5EAAA8;
+}
+
+/* Brief Info of Classes */
+
+.class-brief {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 90px;
+    background-color: #5eaaa893;
+}
+  
+.brief-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+  
+.text-content {
+    width: 100%;
+    max-width: 340px;
+}
+
+/***************************************** CLASSES *****************************************/
+
+/* Hero */
+
+.hero-class {
+    background-image: url(../img/hero-classes.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hero-class-text {
+    font-size: 25px;
+    padding-top: 35%;
+}
+
+.hero-class-text h1 {
+    margin: 0 0 0 70px;
+    color: #FFF5E1;
+}
+
+.hero-class-text p {
+    font-size: 20px;
+    margin: 10px 900px 0 70px;
+    color: white;
+}
+
+.cta-button-long {
+    margin: 10px 0 0 70px;
+}
+
+.cta-button-long button {
+    color: white;
+    width: 324px;
+    height: 44px;
+    font-size: 24px;
+    background-color: #FF6B6B;
+    border: 2px solid #FF6B6B;
+    transition: .5s all ease;
+}
+
+.cta-button-long button:hover {
+    background-color: #ff6b6b74;
+    border: 2px solid #FF6B6B;
+    cursor: pointer;
+}
+
+/* Class Sections */
+
+.class-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.class-box {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.class-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text {
+    padding: 70px 50px;
+}
+
+.text h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.class-btn {
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 48px;
+    font-size: 17px;
+}
+
+/***************************************** EVENT *****************************************/
+
+/* Hero */
+
+.hero-event {
+    background-image: url(../img/hero-event.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hero-event-text {
+    font-size: 25px;
+    padding-top: 28%;
+}
+
+.hero-event-text h1 {
+    margin: 0 0 0 70px;
+    color: #FFF5E1;
+}
+
+.hero-event-text p {
+    font-size: 20px;
+    margin: 10px 900px 0 70px;
+    color: white;
+}
+
+/* Calendar */
+
+.calendar-events {
+    background-color: #ffd3b596;
+    margin: 10% 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar {
+    height: 100%;
+}
+
+.events {
+    height: 500px;
+    width: 850px;
+    overflow-y: scroll;
+    margin-top: 3%;
+}
+
+.event-info {
+    padding: 25px;
+}
+
+.event-info h2 {
+    margin-top: 0;
+}
+
+.event-info p {
+    margin-bottom: 0;
+}
+
+.dark {
+    background-color: #5eaaa883;
+}
+
+.light {
+    background-color: #9bdbd98a;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.image {
+    margin: 0 100px 100px;
+}
+
+.image img {
+    box-shadow: 15px solid #000000;
+}
+
+.g-headline {
+    color: #FF6B6B;
+    margin-left: 100px;
+    font-size: 48px;
+}
+
+/***************************************** SHOP *****************************************/
+
+/* Hero */
+
+.hero-shop {
+    background-image: url(../img/hero-shop.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hero-shop-text {
+    font-size: 25px;
+    padding-top: 25%;
+}
+
+.hero-shop-text h1 {
+    margin: 0 0 0 70px;
+    color: #FFF5E1;
+}
+
+.hero-shop-text p {
+    font-size: 20px;
+    margin: 10px 800px 0 70px;
+    color: white;
+}
+
+/* Store */
+
+.cart {
+   position: relative;
+   top: 45px;
+   left: 90%;
+}
+
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.pro {
+    margin: 7% 0;
+}
+
+.pro h1 {
+    font-size: 32px;
+}
+
+.pro p {
+    font-size: 24px;
+}
+
+/***************************************** DONATE *****************************************/
+
+/* Hero */
+
+.hero-donate {
+    background-image: url(../img/hero-donate.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hero-donate-text {
+    font-size: 25px;
+    padding-top: 33%;
+}
+
+.hero-donate-text h1 {
+    margin: 0 0 0 70px;
+    color: #FFF5E1;
+}
+
+.hero-donate-text p {
+    font-size: 20px;
+    margin: 10px 800px 0 70px;
+    color: white;
+}
+
+/* Donate */
+
+.donate-section {
+    margin: 0 100px 100px;
+}
+
+.donate-title h1 {
+    font-size: 59px;
+    color: #2F7C7A;
+}
+
+.amounts button {
+    width: 106px;
+    height: 57px;
+    border-radius: 10.903px;
+    border: 2.181px solid #5EAAA8;
+    background: rgba(94, 170, 168, 0.44);
+    color: #000;
+    text-align: center;
+    font-size: 26.168px;
+    margin: 0 5px 0 0;
+    transition: .5s all ease;
+}
+
+.amounts button:hover {
+    cursor: pointer;
+    background-color: rgba(94, 170, 168, 0.879);
+}
+
+.input{
+    width: 350px;
+    height: 50px;
+    border-radius: 10.903px;
+    border: 2.181px solid #5EAAA8;
+    background: rgba(94, 170, 168, 0.44);
+    color: #000;
+    font-size: 26.168px;
+}
+
+.donate-box {
+    display: flex;
+}
+
+.left fieldset {
+    width: 810px;
+    height: 960px;
+    margin-top: 5%;
+    background-color: #97D1D0;
+    border-radius: 10px;
+}
+
+.right {
+    width: 479px;
+    height: 980px;
+    background-color: #97D1D0;
+    margin-top: 3%;
+}
+
+fieldset label {
+    font-size: 20px;
+}
+
+fieldset input {
+    width: 734px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+.right p {
+    color: white;
+    margin: 50px;
+}
+
+.right button {
+    position: relative;
+    top: 500px;
+    left: 200px;
+    width: 199px;
+    height: 70px;
+    background-color: #5EAAA8;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    border: none;
+}
+
+/***************************************** FOOTER *****************************************/
+
+footer {
+    background-color: #5EAAA8;
+    color: white;
+    padding: 40px 20px;
+}
+  
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 90px;
+    gap: 10%;
+}
+  
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    width: 250px;
+}
+  
+.footer-left p {
+    font-size: 16px;
+}
+  
+.social-icons img {
+    margin-right: 30px;
+}
+
+.footer-middle {
+    margin: 30px 0;
+}
+  
+.footer-middle li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+  
+.footer-middle a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right {
+    margin: 30px 0;
+}
+  
+.footer-right input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 20px;
+}
+  
+.footer-right li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+  
+.footer-right img {
+    margin-right: 10px;
+}
+  
+.footer-copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}  
+
+/*********************************************************** RESPONSIVE ***********************************************************/
+
+@media screen and (max-width: 800px) {
+    
+    nav li:not(:first-child),
+    nav button {
+        display: none;
+    }
+
+    .hero-home-text {
+        font-size: 30px;
+        padding: 20% 20px 0 20px;
+        text-align: center;
+    }
+
+    .hero-home-text h1,
+    .hero-home-text p {
+        margin: 0 20px;
+    }
+
+    .hero-home-text p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .arrow {
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .mv {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .mv-text h1 {
+        font-size: 36px;
+    }
+
+    .mv-text h2 {
+        font-size: 22px;
+    }
+
+    .class-brief {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .brief-content {
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-middle li {
+        margin-bottom: 10px;
+    }
+
+    .footer-right li {
+        justify-content: center;
+    }
+    
+}
